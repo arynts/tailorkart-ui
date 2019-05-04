@@ -1,0 +1,13 @@
+.login-form {
+    padding: 2em 2em;
+    background: #f4f4f4;
+    margin-top: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+/* .amt-hide{
+    display: none !important;
+} */

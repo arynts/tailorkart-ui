@@ -1,0 +1,123 @@
+{
+	"price-catelogue":{
+		"service-type":[{
+			"men":[{
+			  "product-type":"shirt",
+			  "product-price":{
+				"measurements":[{
+				"size-type":"M",
+				"price": {
+					"qty": "1",
+					"price": "150",
+					"MRP": 150,
+					"date": ""}
+				},{
+				"size-type":"S",
+				"price": {
+					"qty": "1",
+					"price": "140",
+					"MRP": 150,
+					"date": ""}
+				}]
+			  }
+			},{
+			  "product-type":"Pant",
+			  "product-price":{
+				"measurements":[{
+				"size-type":"M",
+				"price": {
+					"qty": "1",
+					"price": "150",
+					"MRP": 150,
+					"date": ""}
+				},{
+				"size-type":"S",
+				"price": {
+					"qty": "1",
+					"price": "140",
+					"MRP": 150,
+					"date": ""}
+				}]
+			  }
+			}],
+			"women":[{
+			  "product-type":"shirt",
+			  "product-price":{
+				"measurements":[{
+				"size-type":"M",
+				"price": {
+					"qty": "1",
+					"price": "150",
+					"MRP": 150,
+					"date": ""}
+				},{
+				"size-type":"S",
+				"price": {
+					"qty": "1",
+					"price": "140",
+					"MRP": 150,
+					"date": ""}
+				}]
+			  }
+			},{
+			  "product-type":"Pant",
+			  "product-price":{
+				"measurements":[{
+				"size-type":"M",
+				"price": {
+					"qty": "1",
+					"price": "150",
+					"MRP": 150,
+					"date": ""}
+				},{
+				"size-type":"S",
+				"price": {
+					"qty": "1",
+					"price": "140",
+					"MRP": 150,
+					"date": ""}
+				}]
+			  }
+			}],
+			"kids":[{
+			  "product-type":"shirt",
+			  "product-price":{
+				"measurements":[{
+				"size-type":"M",
+				"price": {
+					"qty": "1",
+					"price": "150",
+					"MRP": 150,
+					"date": ""}
+				},{
+				"size-type":"S",
+				"price": {
+					"qty": "1",
+					"price": "140",
+					"MRP": 150,
+					"date": ""}
+				}]
+			  }
+			},{
+			  "product-type":"Pant",
+			  "product-price":{
+				"measurements":[{
+				"size-type":"M",
+				"price": {
+					"qty": "1",
+					"price": "150",
+					"MRP": 150,
+					"date": ""}
+				},{
+				"size-type":"S",
+				"price": {
+					"qty": "1",
+					"price": "140",
+					"MRP": 150,
+					"date": ""}
+				}]
+			  }
+			}]
+		}]
+	}
+}
