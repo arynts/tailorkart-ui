@@ -1,0 +1,39 @@
+<mat-grid-list cols="3" rowHeight="600px">
+  <!-- <mat-grid-tile colspan="1" rowspan="1" style="background: cyan">
+    <h2>Title1</h2>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1" style="background: rgb(78, 18, 175)">
+    <h2>eats</h2>
+  </mat-grid-tile> -->
+
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+    <div *ngIf="tile.text === 'Menprofiles'">
+      <!-- <mat-card class="example-card">
+       <carousel>
+         <div>
+           <slide>
+                <div class="carousel-item" style="display: block; width: 100%;">
+                    <div class="col-md-12">
+                        <mat-card class="example-card">
+                            <img mat-card-image src="./assets/images/amtimages/diytailoring.jpg" alt="stritching">
+                        </mat-card>
+                    </div>
+                </div>
+            </slide>
+         </div>
+       </carousel>
+      </mat-card> -->
+      <marquee behavior="scroll" direction="left">
+          <img mat-card-image src="./assets/images/amtimages/diytailoring.jpg" alt="stritching">
+          <img mat-card-image src="./assets/images/amtimages/scissors.jpeg" alt="stritching2">
+          
+      </marquee>
+    </div>
+  </mat-grid-tile>
+
+</mat-grid-list>

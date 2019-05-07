@@ -26,6 +26,7 @@ import { TermsconditionsComponent } from './common/termsconditions/termsconditio
 import { ServicesComponent } from './features/services/services.component';
 import { PricecatalogComponent } from './features/pricecatalog/pricecatalog.component';
 import { KidsComponent } from './features/kids/kids.component';
+import { ClientPortfoliosComponent } from './features/clients/client-portfolios/client-portfolios.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { KidsComponent } from './features/kids/kids.component';
     TermsconditionsComponent,
     ServicesComponent,
     PricecatalogComponent,
-    KidsComponent
+    KidsComponent,
+    ClientPortfoliosComponent
 
   ],
   imports: [
