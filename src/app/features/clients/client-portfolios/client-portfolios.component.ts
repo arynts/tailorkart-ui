@@ -21,10 +21,12 @@ export class ClientPortfoliosComponent implements OnInit {
   }
 
   tiles: Tile[] = [
-    {text: 'Mens', cols: 1, rows: 1, color: 'cyan'},
-    {text: 'Menprofiles', cols: 2, rows: 1, color: 'white'},
+    {text: 'Mens', cols: 2, rows: 1, color: 'cyan'},
+    {text: 'Menprofiles', cols: 1, rows: 1, color: 'white'},
     {text: 'Womens profiles', cols: 2, rows: 1, color: 'white'},
     {text: 'Womens', cols: 1, rows: 1, color: 'red'},
   ];
+
+  
 
 }
