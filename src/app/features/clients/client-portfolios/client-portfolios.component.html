@@ -1,39 +1,112 @@
-<mat-grid-list cols="3" rowHeight="600px">
-  <!-- <mat-grid-tile colspan="1" rowspan="1" style="background: cyan">
-    <h2>Title1</h2>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="1" rowspan="1" style="background: rgb(78, 18, 175)">
-    <h2>eats</h2>
-  </mat-grid-tile> -->
+<h2 style="margin-left: 40%; margin-right: 40%; font-family: Arial, Helvetica, sans-serif">Style you decide</h2>
+<p style="margin-left: 38%; margin-right: 35%; font-family: Arial, Helvetica, sans-serif"><i>We will make you stylish with our stritching</i></p>
+<p style="margin-left: 10%; margin-right: 15%; font-family: Arial, Helvetica, sans-serif">Discover Flawless perfect fit for your unique figure.Your confidence reflects with our perfect fitting .
+	Our skilled proffesionals will make your wardrobe with eligent and stylish look.Allow us to assit your thoughts at your door step.</p>
+<h2 style="margin-left: 30%; margin-right: 20%; font-family: Arial, Helvetica, sans-serif">Want to know how we make your way easy?</h2>
+<div>
+  <mat-grid-list cols="4" rowHeight="400px">
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="example-card-2">
+        <mat-card-header>
+          <mat-card-title>Choose style</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="example-card-2">
+        <mat-card-header>
+          <mat-card-title>Customize</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="example-card-2">
+        <mat-card-header>
+          <mat-card-title>Size:me</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1" >
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Order</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>  
 
-  <mat-grid-tile
-      *ngFor="let tile of tiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color">
-    {{tile.text}}
-    <div *ngIf="tile.text === 'Menprofiles'">
-      <!-- <mat-card class="example-card">
-       <carousel>
-         <div>
-           <slide>
-                <div class="carousel-item" style="display: block; width: 100%;">
-                    <div class="col-md-12">
-                        <mat-card class="example-card">
-                            <img mat-card-image src="./assets/images/amtimages/diytailoring.jpg" alt="stritching">
-                        </mat-card>
-                    </div>
-                </div>
-            </slide>
-         </div>
-       </carousel>
-      </mat-card> -->
-      <marquee behavior="scroll" direction="left">
-          <img mat-card-image src="./assets/images/amtimages/diytailoring.jpg" alt="stritching">
-          <img mat-card-image src="./assets/images/amtimages/scissors.jpeg" alt="stritching2">
-          
-      </marquee>
-    </div>
-  </mat-grid-tile>
-
-</mat-grid-list>
+  <!-- <mat-grid-list cols="3" rowHeight="400px">
+     <mat-grid-tile colspan="1" rowspan="1" style="background: cyan">
+      <h2>Title1</h2>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1" style="background: rgb(78, 18, 175)">
+      <h2>eats</h2>
+    </mat-grid-tile> 
+  
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      {{tile.text}}
+      <div *ngIf="tile.text === 'Menprofiles'">
+        <mat-card class="example-card">
+         <carousel>
+           <div>
+             <slide>
+                  <div class="carousel-item" style="display: block; width: 100%;">
+                      <div class="col-md-12">
+                          <mat-card class="example-card">
+                              <img mat-card-image src="./assets/images/amtimages/diytailoring.jpg" alt="stritching">
+                          </mat-card>
+                      </div>
+                  </div>
+              </slide>
+           </div>
+         </carousel>
+        </mat-card>
+      </div>
+    </mat-grid-tile>
+  
+  </mat-grid-list> -->
