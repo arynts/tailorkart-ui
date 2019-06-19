@@ -1,4 +1,4 @@
-#Tue Apr 09 00:03:31 IST 2019
-base.0=C\:\\Users\\Rasheed\\Desktop\\Workspace\\AbdulMazidTailor\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Thu Jun 13 00:33:46 IST 2019
+base.0=C\:\\Users\\Rasheed\\Desktop\\Workspace\\tailorkart-ui\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
