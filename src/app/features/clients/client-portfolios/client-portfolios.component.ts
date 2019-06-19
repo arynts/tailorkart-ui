@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
-
-export interface Tile {
-  color: string;
-  cols: number;
-  rows: number;
-  text: string;
-}
+import { MatDialog } from '@angular/material';
+import { LoginComponent } from '../../login/login.component';
+import { RegisterComponent } from '../../register/register.component';
+import { VideodemoComponent } from '../../../common/videodemo/videodemo.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-client-portfolios',
@@ -15,18 +12,27 @@ export interface Tile {
 })
 export class ClientPortfoliosComponent implements OnInit {
 
-  constructor() { }
+  public data: any;
+  public demoBox: any;
 
-  ngOnInit() {
+  constructor(public dialog: MatDialog, private http: HttpClient) { }
+
+  ngOnInit(): void {
+      this.http.get("./assets/clientportfolio.json",{responseType: "json"}).subscribe(
+        response =>{
+          this.data = response;
+          console.log("response :"+response);
+          var sample=JSON.stringify(response);
+        }
+      );
+      this.demoBox = "Discover Flawless perfect fit for your unique figure. Your confidence reflects with our perfect fitting. Our skilled proffesionals will make your wardrobe with eligent and stylish look. Allow us to assit your thoughts at your door step.";
   }
 
-  tiles: Tile[] = [
-    {text: 'Mens', cols: 2, rows: 1, color: 'cyan'},
-    {text: 'Menprofiles', cols: 1, rows: 1, color: 'white'},
-    {text: 'Womens profiles', cols: 2, rows: 1, color: 'white'},
-    {text: 'Womens', cols: 1, rows: 1, color: 'red'},
-  ];
-
-  
+  openDialog(): void{
+    const dialogRef = this.dialog.open(VideodemoComponent,{width: "700px"});
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('the dialog was closed');
+    });
+  }
 
 }

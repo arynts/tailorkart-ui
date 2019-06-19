@@ -1,0 +1,19 @@
+.button-back{
+    position: absolute;
+    border-radius: 30px;
+    width: 30%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #a77cf4;
+    color: #FFF;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    right: 10%;
+    bottom: 73%;
+    cursor: pointer;
+    transition: all .25s ease;
+    box-shadow: -5px 6px 20px 0px rgba(51, 51, 51, 0.4);
+}

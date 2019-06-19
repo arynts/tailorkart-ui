@@ -1,0 +1,37 @@
+[{
+    "type": "country",
+    "countryList": [{
+        "code": "IN",
+        "value": "India"
+    },{
+        "code": "UK",
+        "value": "United Kingdom"
+    },{
+        "code": "SN",
+        "value": "Singapore"
+    }]
+},{
+    "type": "state",
+    "stateList": [{
+        "code": "TN",
+        "value": "Tamilnadu"
+    },{
+        "code": "AP",
+        "value": "Andhra Pradesh"
+    },{
+        "code": "TS",
+        "value": "Telangana"
+    }]
+},{
+    "type": "city",
+    "cityList": [{
+        "code": "CHN",
+        "value": "Chennai"
+    },{
+        "code": "VGA",
+        "value": "Vijayawada"
+    },{
+        "code": "HYD",
+        "value": "Hyderabad"
+    }]
+}]
