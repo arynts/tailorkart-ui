@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './common/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule, MatToolbarModule, MatSidenavModule, MatListModule, MatGridListModule, MatInputModule, MatDialogModule, MatFormFieldModule, MatSlideToggleModule, MatTableModule } from '@angular/material';
+import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule, MatToolbarModule, MatSidenavModule, MatListModule, MatGridListModule, MatInputModule, MatDialogModule, MatFormFieldModule, MatSlideToggleModule, MatTableModule, MatStepperModule, MatProgressSpinnerModule, MatSelectModule, MatSortModule, MatPaginatorModule } from '@angular/material';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FooterComponent } from './footer/footer.component';
@@ -26,6 +26,17 @@ import { TermsconditionsComponent } from './common/termsconditions/termsconditio
 import { ServicesComponent } from './features/services/services.component';
 import { PricecatalogComponent } from './features/pricecatalog/pricecatalog.component';
 import { KidsComponent } from './features/kids/kids.component';
+import { ClientPortfoliosComponent } from './features/clients/client-portfolios/client-portfolios.component';
+import { VideodemoComponent } from './common/videodemo/videodemo.component';
+import { AgentdashboardComponent } from './features/Agents/agentdashboard/agentdashboard.component';
+import { AgentLoginComponent } from './features/Agents/agent-login/agent-login.component';
+import { ReportsComponent } from './features/billing/reports/reports.component';
+import { InvoiceComponent } from './features/billing/invoice/invoice.component';
+import { AuditsComponent } from './features/billing/audits/audits.component';
+import { DailyreportsComponent } from './features/billing/reports/dailyreports/dailyreports.component';
+import { WeeklyreportsComponent } from './features/billing/reports/weeklyreports/weeklyreports.component';
+import { MonthlyreportsComponent } from './features/billing/reports/monthlyreports/monthlyreports.component';
+import { ReportsbydateComponent } from './features/billing/reports/reportsbydate/reportsbydate.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +55,18 @@ import { KidsComponent } from './features/kids/kids.component';
     TermsconditionsComponent,
     ServicesComponent,
     PricecatalogComponent,
-    KidsComponent
+    KidsComponent,
+    ClientPortfoliosComponent,
+    VideodemoComponent,
+    AgentdashboardComponent,
+    AgentLoginComponent,
+    ReportsComponent,
+    InvoiceComponent,
+    AuditsComponent,
+    DailyreportsComponent,
+    WeeklyreportsComponent,
+    MonthlyreportsComponent,
+    ReportsbydateComponent
 
   ],
   imports: [
@@ -68,9 +90,16 @@ import { KidsComponent } from './features/kids/kids.component';
     FormsModule,
     MatInputModule,
     MatSlideToggleModule,
-    MatTableModule
+    MatTableModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    MatProgressSpinnerModule,
+    MatSelectModule,
+    MatSortModule,
+    MatPaginatorModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [VideodemoComponent],
 })
 export class AppModule { }
