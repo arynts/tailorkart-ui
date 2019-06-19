@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MatIconRegistry } from '@angular/material';
+import { MatIconRegistry, MatDialog } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
+import { AgentLoginComponent } from '../features/Agents/agent-login/agent-login.component';
 
 export interface Tile {
   color: string;
@@ -20,13 +21,21 @@ export class FooterComponent implements OnInit {
     {text: 'One', cols: 4, rows: 1, color: 'lightblue'}
   ]; 
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private dialog: MatDialog) {
     iconRegistry.addSvgIcon('whatsapp',
     sanitizer.bypassSecurityTrustResourceUrl('assets/images/whatsapp_icon.svg'));
     iconRegistry.addSvgIcon('appstoreBadge',sanitizer.bypassSecurityTrustResourceUrl('assets/images/social/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg'));
    }
 
-  ngOnInit() {
+  ngOnInit() {    
   }
+
+  // openAgentLoginScreen(){
+  //   const dialogRef = this.dialog.open(AgentLoginComponent,{width: "1000px"});
+
+  //   dialogRef.afterClosed().subscribe(result => {
+  //     console.log('the dialog was closed');
+  //   });
+  // }
 
 }

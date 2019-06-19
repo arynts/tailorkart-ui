@@ -1,0 +1,21 @@
+[{
+    "headerValue": "Do you have fabric with you?",
+    "contentValue": "Our agent will come to your doorstep and collects your fabric. Our experienced tailors will stritch as per your instructions.",
+    "Type": "DashboardCard"
+},
+{
+    "headerValue": "Povide measurements / old shirt",
+    "contentValue": "Our authorized agent will come to your doorstep to take the measurements/old shirt. You just need to provide your free time slot",
+    "Type": "DashboardCardippi"
+    
+},
+{
+    "headerValue": "Delivery date",
+    "contentValue": "Based on your garments quantity and style, an expected delivery date will be sent over the message or you can track it on our mobile app.",
+    "Type": "DashboardCard"
+    
+},{
+    "headerValue": "Delivery",
+    "contentValue": "Once the stritching is done, our authorized agent will deliver the cloths to your door step with free of cost. the same you can track it on mobile app.",
+    "Type": "DashboardCard"
+}]

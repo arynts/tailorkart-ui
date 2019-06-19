@@ -12,7 +12,9 @@ import { KidsComponent }  from './features/kids/kids.component'
 import { TermsconditionsComponent } from './common/termsconditions/termsconditions.component';
 import { ServicesComponent } from './features/services/services.component';
 import { PricecatalogComponent } from './features/pricecatalog/pricecatalog.component';
-import { SideMenuComponent } from './side-menu/side-menu.component';
+import { AgentLoginComponent } from './features/Agents/agent-login/agent-login.component';
+import { CarouselComponent } from './common/carousel/carousel.component';
+import { ReportsComponent } from './features/billing/reports/reports.component';
 
 const routes: Routes = [
     // { path: '', component: SideMenuComponent},
@@ -27,7 +29,10 @@ const routes: Routes = [
     { path: 'terms', component: TermsconditionsComponent},
     { path: 'conditions', component: TermsconditionsComponent},
     { path: 'services', component: ServicesComponent},
-    { path: 'pricecatelog', component: PricecatalogComponent}
+    { path: 'pricecatelog', component: PricecatalogComponent},
+    { path: 'agentregistration', component: AgentLoginComponent},
+    { path: '', component: CarouselComponent},
+    { path: 'reports', component: ReportsComponent}
 ];
 
 @NgModule({

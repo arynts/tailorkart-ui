@@ -1,6 +1,6 @@
 {
     "/api/*": {
-      "target": "http://localhost:8084/machine/",
-      "secure": false
+      "target": "http://localhost:8090/",
+      "changeOrigin": true
     }
   }
