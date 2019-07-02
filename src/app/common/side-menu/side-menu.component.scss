@@ -1,0 +1,39 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+.spacer {
+  flex: 1 1 auto; 
+}
+.mat-toolbar a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 16px;
+  letter-spacing: .1px;
+}
+.toolbarcolor {
+  background: linear-gradient(to left, #1c9dc3 0%, #0018cc 100%);
+}
+span {
+  color: rgb(247, 241, 241);
+}

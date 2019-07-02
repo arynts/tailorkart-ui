@@ -1,0 +1,40 @@
+<h1 mat-dialog-title align="center">Signup</h1>
+<div>
+    <form class="example-form" [formGroup]="registrationForm">
+        <table class="example-full-width">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <input formControlName="firstName" matInput placeholder="First name">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <input formControlName="lastName" matInput placeholder="Last name">
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+        
+        <mat-form-field class="example-full-width">
+            <span matPrefix>+91 &nbsp;</span>
+            <input formControlName="telephone" type="tel" matInput placeholder="Telephone">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+            <input formControlName="password" matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+        
+        <mat-slide-toggle color='primary'>Access
+            <a href="/terms" color="primary">terms</a> and
+            <a href="/conditions" color="primary">conditions</a>
+        </mat-slide-toggle>
+    </form>
+</div>
+{{registrationForm.value | json}}
+<div mat-dialog-actions>
+    <button mat-button style="background-color: cadetblue" (click)="onClickCancel()">Cancel</button>
+    <button mat-button style="background-color: cadetblue" cdkFocusInitial (click)="onClickRegister()">Register</button>
+</div>
