@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { MenDetails } from './features/men/model/MenDetails.model';
+import { MenDetails } from './features/services/men/model/MenDetails.model';
 
 
 const httpOptions = {
