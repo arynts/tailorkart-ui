@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatIconRegistry, MatDialog } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
-import { AgentLoginComponent } from '../features/Agents/agent-login/agent-login.component';
 
 export interface Tile {
   color: string;

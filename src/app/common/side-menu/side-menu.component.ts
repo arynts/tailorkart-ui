@@ -3,8 +3,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { MatDialog } from '@angular/material';
-import { RegisterComponent } from '../features/register/register.component';
-import { LoginComponent } from '../features/login/login.component';
+import { RegisterComponent } from '../../features/customers/register/register.component';
+import { CustomerLoginComponent } from '../../features/customers/customer-login/customer-login.component';
 
 @Component({
   selector: 'app-side-menu',
@@ -29,7 +29,7 @@ export class SideMenuComponent {
   }
 
   openMobileDialog(): void{
-    const dialogRef = this.dialog.open(LoginComponent,{width: "160%"})
+    const dialogRef = this.dialog.open(CustomerLoginComponent,{width: "160%"})
   }
 
 

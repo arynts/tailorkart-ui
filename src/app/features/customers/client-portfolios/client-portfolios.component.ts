@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { LoginComponent } from '../../login/login.component';
-import { RegisterComponent } from '../../register/register.component';
 import { VideodemoComponent } from '../../../common/videodemo/videodemo.component';
 import { HttpClient } from '@angular/common/http';
 

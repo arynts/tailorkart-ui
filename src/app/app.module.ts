@@ -6,27 +6,24 @@ import { MenuComponent } from './common/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule, MatToolbarModule, MatSidenavModule, MatListModule, MatGridListModule, MatInputModule, MatDialogModule, MatFormFieldModule, MatSlideToggleModule, MatTableModule, MatStepperModule, MatProgressSpinnerModule, MatSelectModule, MatSortModule, MatPaginatorModule } from '@angular/material';
-import { SideMenuComponent } from './side-menu/side-menu.component';
+import { SideMenuComponent } from './common/side-menu/side-menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './common/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './common/carousel/carousel.component';
 import { CarouselModule } from 'ngx-bootstrap';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { RegisterComponent } from './features/register/register.component';
-import { LoginComponent } from './features/login/login.component';
+import { RegisterComponent } from './features/customers/register/register.component';
 import { FaqComponent } from './common/faq/faq.component';
 import { AboutComponent } from './common/about/about.component';
 import { ContactusComponent } from './common/contactus/contactus.component';
-import { MenComponent } from './features/men/men.component';
-import { WomenComponent } from './features/women/women.component';
+import { MenComponent } from './features/services/men/men.component';
+import { WomenComponent } from './features/services/women/women.component';
 import { TermsconditionsComponent } from './common/termsconditions/termsconditions.component';
-import { ServicesComponent } from './features/services/services.component';
-import { PricecatalogComponent } from './features/pricecatalog/pricecatalog.component';
-import { KidsComponent } from './features/kids/kids.component';
-import { ClientPortfoliosComponent } from './features/clients/client-portfolios/client-portfolios.component';
+import { KidsComponent } from './features/services/kids/kids.component';
+import { ClientPortfoliosComponent } from './features/customers/client-portfolios/client-portfolios.component';
 import { VideodemoComponent } from './common/videodemo/videodemo.component';
 import { AgentdashboardComponent } from './features/Agents/agentdashboard/agentdashboard.component';
 import { AgentLoginComponent } from './features/Agents/agent-login/agent-login.component';
@@ -37,6 +34,8 @@ import { DailyreportsComponent } from './features/billing/reports/dailyreports/d
 import { WeeklyreportsComponent } from './features/billing/reports/weeklyreports/weeklyreports.component';
 import { MonthlyreportsComponent } from './features/billing/reports/monthlyreports/monthlyreports.component';
 import { ReportsbydateComponent } from './features/billing/reports/reportsbydate/reportsbydate.component';
+import { CustomerLoginComponent } from './features/customers/customer-login/customer-login.component';
+import { CoreModule } from './core.module';
 
 @NgModule({
   declarations: [
@@ -46,15 +45,12 @@ import { ReportsbydateComponent } from './features/billing/reports/reportsbydate
     FooterComponent,
     CarouselComponent,
     RegisterComponent,
-    LoginComponent,
     FaqComponent,
     AboutComponent,
     ContactusComponent,
     MenComponent,
     WomenComponent,
     TermsconditionsComponent,
-    ServicesComponent,
-    PricecatalogComponent,
     KidsComponent,
     ClientPortfoliosComponent,
     VideodemoComponent,
@@ -66,7 +62,8 @@ import { ReportsbydateComponent } from './features/billing/reports/reportsbydate
     DailyreportsComponent,
     WeeklyreportsComponent,
     MonthlyreportsComponent,
-    ReportsbydateComponent
+    ReportsbydateComponent,
+    CustomerLoginComponent,
 
   ],
   imports: [
@@ -96,7 +93,8 @@ import { ReportsbydateComponent } from './features/billing/reports/reportsbydate
     MatProgressSpinnerModule,
     MatSelectModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent],
